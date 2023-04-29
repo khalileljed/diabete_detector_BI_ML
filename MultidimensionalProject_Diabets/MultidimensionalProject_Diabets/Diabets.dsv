@@ -1,0 +1,170 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6941d672-aa12-4c7c-8b74-f86b8b3d228b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Diabets</ID>
+  <Name>Diabets</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Diabets</DataSourceID>
+  <Schema>
+    <xs:schema id="Diabets" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Diabets" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="30f91d93-0a69-486d-8a7b-3a2fe7cdcee2">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Dim_Age" msprop:design-time-name="0951d993-af0b-445b-924e-fdb834af668f" msprop:DbTableName="Dim_Age" msprop:FriendlyName="Dim_Age" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id_Age" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="0aa7bafe-2195-4461-b402-764613839c77" msprop:DbColumnName="Id_Age" msprop:FriendlyName="Id_Age" type="xs:int" />
+                  <xs:element name="Age" msprop:design-time-name="23685d39-e207-4cfd-9f94-34bb725e7ef2" msprop:DbColumnName="Age" msprop:FriendlyName="Age" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_delayed_healing" msprop:design-time-name="c613ffe7-c579-463b-8a79-1336e57c5395" msprop:DbTableName="Dim_delayed_healing" msprop:FriendlyName="Dim_delayed_healing" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id_DH" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="aa6b1bca-a668-4cf1-b679-9970e2dcfe1f" msprop:DbColumnName="Id_DH" msprop:FriendlyName="Id_DH" type="xs:int" />
+                  <xs:element name="delayed_x0020_healing" msprop:design-time-name="6ffddcc7-3399-4dee-939b-50fc864fc4b5" msprop:DbColumnName="delayed healing" msprop:FriendlyName="delayed healing" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Gender" msprop:design-time-name="2f40b49a-97c7-44e6-bd97-2df0e756e24b" msprop:DbTableName="Dim_Gender" msprop:FriendlyName="Dim_Gender" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id_Gender" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="2b1fce30-90eb-4a7c-8ee8-c07ab0ec1b30" msprop:DbColumnName="Id_Gender" msprop:FriendlyName="Id_Gender" type="xs:int" />
+                  <xs:element name="Gender" msprop:design-time-name="088e65c7-56ca-4c4a-b06d-1219e29fb3f1" msprop:DbColumnName="Gender" msprop:FriendlyName="Gender" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Irritability" msprop:design-time-name="3b9f3c3a-cc8c-44ea-abc5-537bd0563a69" msprop:DbTableName="Dim_Irritability" msprop:FriendlyName="Dim_Irritability" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id_Irr" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="11a20c51-9745-4984-8866-64139e7b2b0d" msprop:DbColumnName="Id_Irr" msprop:FriendlyName="Id_Irr" type="xs:int" />
+                  <xs:element name="Irritability" msprop:design-time-name="4126e228-0166-4ecc-a362-9ec945bb158b" msprop:DbColumnName="Irritability" msprop:FriendlyName="Irritability" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Obesity" msprop:design-time-name="2306b5d7-1d67-476a-b664-effcdd456de5" msprop:DbTableName="Dim_Obesity" msprop:FriendlyName="Dim_Obesity" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id_Ob" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="c36d89f7-792f-48c1-b120-b96035a477e9" msprop:DbColumnName="Id_Ob" msprop:FriendlyName="Id_Ob" type="xs:int" />
+                  <xs:element name="Obesity" msprop:design-time-name="d4242476-91f2-4936-8bcc-584ed11905ef" msprop:DbColumnName="Obesity" msprop:FriendlyName="Obesity" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Faits_Diabets" msprop:design-time-name="8a2b04e7-bc17-4a97-bc04-180267cfe9ec" msprop:DbTableName="Faits_Diabets" msprop:FriendlyName="Faits_Diabets" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="46ad9e2d-7217-4855-a9cd-6c7ca5754ae4" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" minOccurs="0" />
+                  <xs:element name="class" msprop:design-time-name="1bdbc9d7-47ad-4dc6-932c-7a076cade65f" msprop:DbColumnName="class" msprop:FriendlyName="class" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id_Age" msprop:design-time-name="409565ca-6303-4e12-96fe-cf606c2f5478" msprop:DbColumnName="id_Age" msprop:FriendlyName="id_Age" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id_Gender" msprop:design-time-name="ebcdca69-e350-4a71-bb45-05be5ba8c739" msprop:DbColumnName="Id_Gender" msprop:FriendlyName="Id_Gender" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id_Irr" msprop:design-time-name="e9d86617-460e-4b17-ba8f-506b4d4877b4" msprop:DbColumnName="Id_Irr" msprop:FriendlyName="Id_Irr" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id_DH" msprop:design-time-name="62231df0-8fd3-4a6e-88a1-d14e7a65c983" msprop:DbColumnName="Id_DH" msprop:FriendlyName="Id_DH" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id_Ob" msprop:design-time-name="4be9599a-c9f1-4c7c-a972-4f245324bfa9" msprop:DbColumnName="Id_Ob" msprop:FriendlyName="Id_Ob" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Age" />
+          <xs:field xpath="Id_Age" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_delayed_healing_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_delayed_healing" />
+          <xs:field xpath="Id_DH" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Gender_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Gender" />
+          <xs:field xpath="Id_Gender" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Irritability_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Irritability" />
+          <xs:field xpath="Id_Irr" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Obesity_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Obesity" />
+          <xs:field xpath="Id_Ob" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="Faits_Diabets-Dim_Age" msdata:parent="dbo_Dim_Age" msdata:child="dbo_Faits_Diabets" msdata:parentkey="Id_Age" msdata:childkey="id_Age" />
+          <msdata:Relationship name="Faits_Diabets-Dim_Gender" msdata:parent="dbo_Dim_Gender" msdata:child="dbo_Faits_Diabets" msdata:parentkey="Id_Gender" msdata:childkey="Id_Gender" />
+          <msdata:Relationship name="Faits_Diabets-Dim_Irritability" msdata:parent="dbo_Dim_Irritability" msdata:child="dbo_Faits_Diabets" msdata:parentkey="Id_Irr" msdata:childkey="Id_Irr" />
+          <msdata:Relationship name="Faits_Diabets-Dim_delayed_healing" msdata:parent="dbo_Dim_delayed_healing" msdata:child="dbo_Faits_Diabets" msdata:parentkey="Id_DH" msdata:childkey="Id_DH" />
+          <msdata:Relationship name="Faits_Diabets-Dim_Obesity" msdata:parent="dbo_Dim_Obesity" msdata:child="dbo_Faits_Diabets" msdata:parentkey="Id_Ob" msdata:childkey="Id_Ob" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <Diabets xmlns="" />
+  </Schema>
+</DataSourceView>
